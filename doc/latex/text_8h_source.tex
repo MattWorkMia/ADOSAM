@@ -1,0 +1,50 @@
+\hypertarget{text_8h_source}{}\doxysection{text.\+h}
+\label{text_8h_source}\index{include/text.h@{include/text.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PROJECT\_INC\_TEXT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PROJECT\_INC\_TEXT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_ttf.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classText}{Text}}\{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{classText}{Text}}(SDL\_Renderer*\ renderer,\ \textcolor{keyword}{const}\ SDL\_Color\&\ color,\ TTF\_Font*\ font,\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\&\ x\_pos,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\&\ y\_pos,\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ width,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ height,\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ initial\_value);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classText}{\string~Text}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ Update(SDL\_Renderer*\ renderer,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ value);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ Render(SDL\_Renderer*\ renderer);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ SDL\_Surface*\ text\_surface\_;}
+\DoxyCodeLine{00029\ \ \ \ \ SDL\_Texture*\ text\_texture\_;}
+\DoxyCodeLine{00030\ \ \ \ \ SDL\_Rect*\ text\_rectangle\_;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ SDL\_Color\ color\_;}
+\DoxyCodeLine{00033\ \ \ \ \ TTF\_Font*\ font\_;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{float}\ x\_pos\_;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{float}\ y\_pos\_;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ Uint16\ width\_;}
+\DoxyCodeLine{00039\ \ \ \ \ Uint16\ height\_;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,71 @@
+\hypertarget{classLevel}{}\doxysection{Level Class Reference}
+\label{classLevel}\index{Level@{Level}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLevel_a3a096c08f49bd7e77498ed7ff98707a1}\label{classLevel_a3a096c08f49bd7e77498ed7ff98707a1}} 
+{\bfseries Level} (const string \&img\+\_\+tile\+\_\+path, const string \&img\+\_\+extension, const string \&level\+\_\+folder\+\_\+path, SDL\+\_\+\+Display\+Mode $\ast$displaymode, const float \&song\+\_\+bpm, const float \&first\+\_\+beat\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classLevel_aabc9673d90fc7628a1ab5d9f897f2ece}\label{classLevel_aabc9673d90fc7628a1ab5d9f897f2ece}} 
+void {\bfseries Load} (const string \&level\+\_\+folder\+\_\+path, const float \&song\+\_\+bpm, const float \&first\+\_\+beat\+\_\+offset)
+\item 
+\mbox{\Hypertarget{classLevel_a204789723ede27878fc0613328925c08}\label{classLevel_a204789723ede27878fc0613328925c08}} 
+void {\bfseries Load\+New\+Tiles} ()
+\item 
+\mbox{\Hypertarget{classLevel_a6792b4047fa6ef6322ea287ed64a7ac5}\label{classLevel_a6792b4047fa6ef6322ea287ed64a7ac5}} 
+void {\bfseries Unload\+Out\+Of\+Screen\+Tiles} ()
+\item 
+\mbox{\Hypertarget{classLevel_abbe65a36d5e5849e876cdbaa76e0d8bf}\label{classLevel_abbe65a36d5e5849e876cdbaa76e0d8bf}} 
+void {\bfseries Render} (SDL\+\_\+\+Renderer $\ast$renderer)
+\item 
+\mbox{\Hypertarget{classLevel_aa62d7fa4e3c82f076400118e7a42ed9d}\label{classLevel_aa62d7fa4e3c82f076400118e7a42ed9d}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{classLevel_a348ad48f5fe0a4158751778735d88230}\label{classLevel_a348ad48f5fe0a4158751778735d88230}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{classLevel_aab24cb758ae00049094ffb7aefb69787}\label{classLevel_aab24cb758ae00049094ffb7aefb69787}} 
+void {\bfseries Add\+Tile\+To\+Display} (\mbox{\hyperlink{classTile}{Tile}} $\ast$tile\+\_\+to\+\_\+add)
+\item 
+\mbox{\Hypertarget{classLevel_a08f20dac184f478e250d8a0e07743aa4}\label{classLevel_a08f20dac184f478e250d8a0e07743aa4}} 
+void {\bfseries Update\+Tiles\+Position} ()
+\item 
+\mbox{\Hypertarget{classLevel_aeec58030dbc80f2ac79b9e2391173520}\label{classLevel_aeec58030dbc80f2ac79b9e2391173520}} 
+bool {\bfseries Is\+Next\+Tile\+In\+Display} (const \mbox{\hyperlink{classTile}{Tile}} \&current\+\_\+tile, const string \&next\+\_\+tyle\+\_\+type)
+\item 
+\mbox{\Hypertarget{classLevel_aa2628472d7cb20180ff9f27663d1fc0a}\label{classLevel_aa2628472d7cb20180ff9f27663d1fc0a}} 
+bool {\bfseries Is\+Tile\+Out\+Of\+Screen} (const \mbox{\hyperlink{classTile}{Tile}} \&tile) const
+\item 
+\mbox{\Hypertarget{classLevel_a532e0cdc99937cb6dee29501ced9a850}\label{classLevel_a532e0cdc99937cb6dee29501ced9a850}} 
+\mbox{\hyperlink{classTile}{Tile}} $\ast$ {\bfseries Get\+Oldest\+Displayed\+Tile} () const
+\item 
+\mbox{\Hypertarget{classLevel_a4df24b630f1d6b9eeb4d943fa917b5b8}\label{classLevel_a4df24b630f1d6b9eeb4d943fa917b5b8}} 
+\mbox{\hyperlink{classTile}{Tile}} $\ast$ {\bfseries Get\+Current\+Tile} () const
+\item 
+\mbox{\Hypertarget{classLevel_a43bbfc4c04c98f714054c95829d1d66f}\label{classLevel_a43bbfc4c04c98f714054c95829d1d66f}} 
+void {\bfseries Pop\+Oldest\+Displayed\+Tile} ()
+\item 
+\mbox{\Hypertarget{classLevel_a337e217465300eea7d17686dfff3074c}\label{classLevel_a337e217465300eea7d17686dfff3074c}} 
+void {\bfseries Player\+Go\+Next\+Tile} ()
+\item 
+\mbox{\Hypertarget{classLevel_a294c9011ca9c0455c50d01eb46c4fd1d}\label{classLevel_a294c9011ca9c0455c50d01eb46c4fd1d}} 
+void {\bfseries Check\+Player\+Accuracy} ()
+\item 
+\mbox{\Hypertarget{classLevel_ad51b41950d409d9ab00052f2f5daaf38}\label{classLevel_ad51b41950d409d9ab00052f2f5daaf38}} 
+int {\bfseries Get\+Score} () const
+\item 
+\mbox{\Hypertarget{classLevel_a55e57fb894585caadadf35482b397ee1}\label{classLevel_a55e57fb894585caadadf35482b397ee1}} 
+int {\bfseries Get\+Life} () const
+\item 
+\mbox{\Hypertarget{classLevel_a91a4e625484237219ce7c459b12ba284}\label{classLevel_a91a4e625484237219ce7c459b12ba284}} 
+void {\bfseries Play\+Sound\+Effect} ()
+\item 
+\mbox{\Hypertarget{classLevel_a96ad14d1a0e9969e566390956b29f971}\label{classLevel_a96ad14d1a0e9969e566390956b29f971}} 
+float {\bfseries Get\+Music\+Seconds\+Per\+Beat} () const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/level.\+h\item 
+src/level.\+cpp\end{DoxyCompactItemize}

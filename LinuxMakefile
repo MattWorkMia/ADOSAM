@@ -1,0 +1,36 @@
+# Options du compilateur
+CXX = g++
+CXXFLAGS = -m64 -g -std=c++17 -Wall -ggdb
+
+# flags lib SDL
+SDL_CFLAGS := $(shell sdl2-config --cflags)
+SDL_LDFLAGS := -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
+
+# Include paths
+INCLUDES = -I./include 
+
+# Fichiers
+SOURCES = $(wildcard src/*.cpp)
+OBJECTS = $(patsubst src/%.cpp, obj/%.o, $(SOURCES))
+
+# Executable
+EXECUTABLE = bin/adosam
+
+# Build rule for the executable
+$(EXECUTABLE): $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $(SDL_CFLAGS) $^ -o $@ $(SDL_LDFLAGS)
+
+# Règles
+all: $(EXECUTABLE)
+
+obj/%.o: src/%.cpp
+# @mkdir -p obj
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(SDL_CFLAGS) -c $< -o $@
+
+doc: doc/doxyfile
+	doxygen doc/doxyfile
+
+clean:
+	rm -f $(OBJECTS) $(EXECUTABLE)
+
+.PHONY: all doc clean
